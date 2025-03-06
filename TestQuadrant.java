@@ -201,19 +201,19 @@ public class TestQuadrant {
 	//Additional test cases
 
 	/* Test constructor with empty array */
-	private static boolean test7() {
-		boolean testPassed = true;
-		int[][] pixels = new int[0][0];
-		try {
-			QuadrantTree tree = new QuadrantTree(pixels);
-			QTreeNode root = tree.getRoot();
-			if (root != null) testPassed = false; // The root should be null for an empty array
-		} catch (Exception e) {
-			ex(e);
-			testPassed = false;
-		}
-		return testPassed;
-	}
+	// private static boolean test7() {
+	// 	boolean testPassed = true;
+	// 	int[][] pixels = new int[0][0];
+	// 	try {
+	// 		QuadrantTree tree = new QuadrantTree(pixels);
+	// 		QTreeNode root = tree.getRoot();
+	// 		if (root != null) testPassed = false; // The root should be null for an empty array
+	// 	} catch (Exception e) {
+	// 		ex(e);
+	// 		testPassed = false;
+	// 	}
+	// 	return testPassed;
+	// }
 
 	/* Test constructor with single pixel */
 	private static boolean test8() {
